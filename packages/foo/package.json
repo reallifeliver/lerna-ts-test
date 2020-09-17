@@ -1,0 +1,22 @@
+{
+  "name": "@reallifeliver/foo",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "reallifeliver <pms3300@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/foo.js",
+  "types": "dist/index",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "yarn run clean && yarn run compile",
+    "compile": "tsc -p tsconfig.build.json",
+    "clean": "rimraf -rf ./dist"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "typescript": "^4.0.2"
+  }
+}

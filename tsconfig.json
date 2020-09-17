@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.build.json",
+
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@reallifeliver/foo": ["/packages/foo/src"],
+      "@reallifeliver/bar": ["/packages/bar/src"],
+      "@reallifeliver/*": ["/packages/*/src"]
+    }
+  }
+}

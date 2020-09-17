@@ -1,0 +1,26 @@
+{
+  "name": "@reallifeliver/bar",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "reallifeliver <pms3300@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "dist/index",
+  "types": "dist/index",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "yarn run clean && yarn run compile",
+    "compile": "tsc -p tsconfig.build.json",
+    "clean": "rimraf -rf ./dist",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "typescript": "^4.0.2"
+  },
+  "dependencies": {
+    "@reallifeliver/foo": "0.0.0"
+  }
+}
