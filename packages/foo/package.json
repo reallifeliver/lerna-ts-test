@@ -12,7 +12,7 @@
   ],
   "scripts": {
     "build": "yarn run clean && yarn run compile",
-    "compile": "tsc -p tsconfig.build.json",
+    "compile": "tsc -b tsconfig.build.json",
     "clean": "rimraf -rf ./dist"
   },
   "devDependencies": {
